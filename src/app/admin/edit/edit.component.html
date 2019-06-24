@@ -1,0 +1,126 @@
+
+<div class="row">
+  
+    <div class="col-lg-8 col-sm-12 my-2 bg-light mx-auto" *ngFor="let property of profile | async;let i = index">
+        <h1 class="text-center mt-5 pt-3">Add-Schedule</h1>
+      
+        <form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+                <div class="col-md-6 mx-auto"  >
+                        <p class="alert alert-success">
+                                <strong>Add Schedule added Successfully!</strong> 
+                  
+                            </p>
+                        </div>
+            <div class="row" >
+                <div class="col-lg-5 col-12">
+                    <label>Exercise Name</label>
+                    <input type="text" name="ExerciseName" [ngModel]='property.ExerciseName' class="form-control"
+                        >
+                       
+                </div>
+                <div class="col-lg-4 col-12">
+                    <label>Date and Time</label><br>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-calendar fa"></i></span>
+                        <input type="date" name="Date"  [ngModel]='property.Date' class="form-control hasDatepicker"
+                            >
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <label>Distance</label><br>
+                    <select  name="Distance" [ngModel]='property.Distance' class="form-control">
+                        <option value="100">100 Meter</option>
+                        <option value="200">200 Meter</option>
+                        <option value="300">300 Meter</option>
+                        <option value="1600">1600 Meter</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-lg-6 col-12">
+                    <label>Rest</label>
+                    <input type="text" class="form-control" name="Rest" id="Rest" [ngModel]='property.Rest'>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <label>Notes</label>
+                    <textarea rows="2" name="Notes" id="Notes" class="form-control" [ngModel]='property.Notes'></textarea>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-lg-6 col-12">
+                        
+                    <label>Tag1</label>
+                    <!-- <select [(ngModel)]="studentName">
+                                <option [value]="exe.fullName" *ngFor="let exe of list" class="form-control">{{exe.fullName}}</option>
+                                 </select> -->
+                    <input type="text" class="form-control" name="Tag1" id="Tag1" [ngModel]='property.Tag1'>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <label>Tag2</label>
+                    <input type="text" class="form-control" name="Tag2" id="Tag2" [ngModel]='property.Tag2'>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-lg-6 col-12">
+                    <label>Tag3</label>
+                    <input type="text" class="form-control" name="Tag3" id="Tag3" [ngModel]='property.Tag3'>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <label>Tag4</label>
+                    <input type="text" class="form-control" name="Tag4" id="Tag4" [ngModel]='property.Tag4'>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-lg-6 col-12">
+                    <label>Tag5</label>
+                    <input type="text" class="form-control" name="Tag5" id="Tag5" [ngModel]='property.Tag5'>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <label>Tag6</label>
+                    <input type="text" class="form-control" name="Tag6" id="Tag6" [ngModel]='property.Tag6'>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-lg-6 col-12">
+                    <label>Tag7</label>
+                    <input type="text" class="form-control" name="Tag7" id="Tag7" [ngModel]='property.Tag7'>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <label>Tag8</label>
+                    <input type="text" class="form-control" name="Tag8" id="Tag8" [ngModel]='property.Tag8'>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-lg-6 col-12">
+                    <label>Tag9</label>
+                    <input type="text" class="form-control" name="Tag9" id="Tag9" [ngModel]='property.Tag9'>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <label>Tag10</label>
+                    <input type="text" class="form-control" name="Tag10" id="Tag10" [ngModel]='property.Tag10'>
+                </div>
+            </div>
+            <div class="col-lg-10 col-12 text-center">
+                    <mat-list-item>
+                            <mat-form-field>
+                                <mat-select placeholder="Athlete Names" name="Athlete1" class="filter-select" [(ngModel)]="Athlete1" multiple>
+                                    <mat-option [value]="exe.fullName" *ngFor="let exe of list" class="form-control" name="Athlete1" id="Athlete1" #Athlete1="ngModel"
+                                        [(ngModel)]="service.formexercise.Athlete1">
+            
+                                        {{exe.fullName}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </mat-list-item>
+                        </div>
+                        <div class="row submit-button-container mx-auto">
+                                <div class="col-md-4">
+                                  <button  class="submit-button" color="primary" type="submit" [disabled]="!form.valid">Save</button>
+                                </div>
+                                <div class="col-md-4">
+                                  <button  class="delete-button" color="warn" type="button" (click)="delete()">Delete</button>
+                                </div>
+                              </div>
+        </form>
+    </div>
+</div>

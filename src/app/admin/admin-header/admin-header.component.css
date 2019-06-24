@@ -1,0 +1,151 @@
+.top-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1999;
+    width: 100%;
+    max-height: 60px;
+    min-height: 60px;
+    background-color: #37474f;
+}   
+.headerimg{
+    background-image: url('/assets/image/background/desktop/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+}
+.size{
+    overflow-x: hidden;
+}
+
+.left-nav {
+    display: block;
+    float: left;
+    width: 200px;
+    min-height: 60px;
+    background-color: #ff6e40;
+    
+}
+.fa{
+    color: #B0BEC5;
+    font-size: 1.2rem;
+}
+.quick-area .slantit {
+    position: relative;
+}
+ .logo-area {
+    display: block;
+    float: left;
+   
+    min-height: 60px;
+    
+}
+
+.line {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    z-index: 2;
+    width: 60px;
+    height: 3px;
+    background-color: #ff6e40;
+}
+h1{
+    
+    padding: 24px 79px 0 100px;
+ 
+    font-size: 28px;
+   
+   
+    text-transform: uppercase;
+   margin-left:-5rem;
+}
+.img1{
+    right: 10px;
+    width: 4vw;
+    height: 4vw;
+    
+}
+
+.pagetitle {
+    position: relative;
+    background-color: #fff;
+    margin-top:-1rem;
+}
+.wid-stats {
+    position: relative;
+    height: 75px;
+    padding: 0 0 15px 0;
+    padding-right: 0;
+    margin-right: 45px;
+    margin-left: 45px;
+  
+}
+.wid-stats:before {
+    position: absolute;
+    top: -24px;
+    left: -6px;
+    z-index: 1;
+    display: block;
+    width: 60px;
+    height: 75px;
+    background-color: #fff;
+    content: " ";
+    transform: skewX(30deg);
+}
+
+
+.wid-stats .stats-data {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0 0 15px;
+}
+
+.wid-stats:after {
+    position: absolute;
+    top: -15px;
+    right: -14rem;
+    z-index: 1;
+    display: block;
+    width: 40px;
+    height: 66px;
+    background-color: #fff;
+    content: " ";
+    transform: skewX(30deg);
+ 
+}
+.profile{
+    width:3vw;
+    }
+.wid-stats .stats-data {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0 0 15px;
+}
+.navbg{
+    background-color: #232f3d;
+    height: 70px;
+}
+.bg-primary {
+    background-color: #37474F !important;
+}
+.user{
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}       
+.navbar-toggler{
+    border:none;
+}
+a:hover{
+    text-decoration: none;
+}
+.img{
+    width: 4vw;
+    height: 7vh;
+}   
